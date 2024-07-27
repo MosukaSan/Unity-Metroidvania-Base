@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Moving : MonoBehaviour
 {
-    private bool isGrounded;
+    public static bool isGrounded;
     public float speed;
     public float jumpForce;
     public float dashForce;
@@ -16,23 +16,16 @@ public class Moving : MonoBehaviour
     private bool isRight = true, isLeft;
     public Animator anim;
     public Rigidbody2D rb2b;
-    public Text isGroundedLog;
     bool onGroundCheck = true;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         anim.GetComponent<Animator>();
         rb2b.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Log
-        isGroundedLog.text = $"IsGrounded: {isGrounded}";
-
         //Movemnt
         if (movement)
         {

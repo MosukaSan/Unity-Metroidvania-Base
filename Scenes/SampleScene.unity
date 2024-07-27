@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 565592483}
   - component: {fileID: 565592482}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: txtIsGroundedLog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -467,8 +467,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -515.0201, y: 452.47046}
-  m_SizeDelta: {x: 823.2415, y: 119.7034}
+  m_AnchoredPosition: {x: -534.44403, y: 474.32245}
+  m_SizeDelta: {x: 784.3936, y: 75.9994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565592482
 MonoBehaviour:
@@ -492,7 +492,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 83
+    m_FontSize: 59
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -899,7 +899,6 @@ MonoBehaviour:
   dashTime: 0.4
   anim: {fileID: 1640777817}
   rb2b: {fileID: 1640777821}
-  isGroundedLog: {fileID: 565592482}
 --- !u!61 &1640777820
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -984,6 +983,7 @@ GameObject:
   - component: {fileID: 1678466441}
   - component: {fileID: 1678466440}
   - component: {fileID: 1678466439}
+  - component: {fileID: 1678466443}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1074,6 +1074,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1678466443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678466438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f581dd45ca7c3c94f81f17caa94e3d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtIsGroundedLog: {fileID: 565592482}
 --- !u!1 &1857635449
 GameObject:
   m_ObjectHideFlags: 0
