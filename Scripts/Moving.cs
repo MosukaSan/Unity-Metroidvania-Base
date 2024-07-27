@@ -80,6 +80,7 @@ public class Moving : MonoBehaviour
         {
             if (isRight)
             {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
                 rb2b.velocity = Vector3.right * dashForce;
                 rb2b.constraints = RigidbodyConstraints2D.FreezePositionY;
                 movement = false;
@@ -89,6 +90,7 @@ public class Moving : MonoBehaviour
             }
             else if (isLeft)
             {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 0.1f, transform.position.z);
                 rb2b.velocity = Vector3.left * dashForce;
                 rb2b.constraints = RigidbodyConstraints2D.FreezePositionY;
                 movement = false;
