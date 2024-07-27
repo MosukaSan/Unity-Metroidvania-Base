@@ -84,6 +84,8 @@ public class Moving : MonoBehaviour
                 rb2b.constraints = RigidbodyConstraints2D.FreezePositionY;
                 movement = false;
                 Invoke("stopDash", dashTime);
+
+                anim.SetBool("varDash", true);
             }
             else if (isLeft)
             {
@@ -91,6 +93,8 @@ public class Moving : MonoBehaviour
                 rb2b.constraints = RigidbodyConstraints2D.FreezePositionY;
                 movement = false;
                 Invoke("stopDash", dashTime);
+
+                anim.SetBool("varDash", true);
             }
         }
 
@@ -144,6 +148,9 @@ public class Moving : MonoBehaviour
     {
         rb2b.constraints = RigidbodyConstraints2D.None;
         rb2b.constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        anim.SetBool("varDash", false);
+
         movement = true;
     }
 }
