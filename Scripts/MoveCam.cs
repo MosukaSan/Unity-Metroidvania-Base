@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class MoveCam : MonoBehaviour
 {
-    public float xOffset;
-    public float height;
-    public float distance;
+    public float xOffset, height, distance;
     public Transform player;
 
     void Update()

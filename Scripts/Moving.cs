@@ -7,16 +7,11 @@ using UnityEngine.UI;
 public class Moving : MonoBehaviour
 {
     public static bool isGrounded;
-    public float speed;
-    public float jumpForce;
-    public float dashForce;
-    public float dashTime;
-    private bool movement = true;
-    private bool run;
+    public float speed, jumpForce, dashForce, dashTime;
+    private bool onGroundCheck = true, movement = true, run;
     private bool isRight = true, isLeft;
     public Animator anim;
     public Rigidbody2D rb2b;
-    bool onGroundCheck = true;
 
     void Start()
     {

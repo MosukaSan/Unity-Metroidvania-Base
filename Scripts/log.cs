@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class log : MonoBehaviour
+public class Log : MonoBehaviour
 {
     public Text txtIsGroundedLog;
 
